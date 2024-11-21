@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sus</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="서스펜선-튜닝">서스펜선 튜닝</h1>
+<h2 id="목차">목차</h2>
+<ol>
+<li><a href="#%EA%B8%B0%EB%B3%B8">기본</a></li>
+<li><a href="#%ED%95%AD%EB%AA%A9%EB%B3%84">항목별</a>
+<ol>
+<li><a href="#%EB%86%92%EC%9D%B4">높이</a></li>
+<li><a href="#%EC%98%A4%ED%94%84%EC%85%8B">오프셋</a></li>
+<li><a href="#%EC%BA%A0%EB%B2%84">캠버</a></li>
+<li><a href="#%EC%8A%A4%ED%94%84%EB%A7%81">스프링</a>
+<ol>
+<li><a href="#%EA%B0%95%EC%84%B1">강성</a></li>
+<li><a href="#%EA%B0%90%EC%87%A0%EB%8C%90%ED%95%91">감쇠(댐핑)</a></li>
+</ol>
+</li>
+<li><a href="#%EC%A1%B0%ED%96%A5">조향</a></li>
+</ol>
+</li>
+<li><a href="#%EC%A2%85%EB%AA%A9%EB%B3%84">종목별</a>
+<ol>
+<li><a href="#%EB%93%9C%EB%9E%98%EA%B7%B8">드래그</a></li>
+<li><a href="#%EC%84%9C%ED%82%B7%EB%A0%88%EC%9D%B4%EC%8A%A4">서킷</a></li>
+<li><a href="#%EB%9E%A0%EB%A6%AC">랠리</a></li>
+</ol>
+</li>
+</ol>
+<hr>
+<h2 id="기본">기본</h2>
+<p>최적의 서스펜션은 차마다, 주행 방식에 따라 다 다르니 이 문서는 참고만 할 것.</p>
+<h2 id="항목별">항목별</h2>
+<h2 id="높이">높이</h2>
+<p>기본값에서 <strong>바꾸는 것을 추천하지는 않는다</strong></p>
+<p>랠리에서는 높이를 앞뒤 어느 정도 높이는 것이 좋고,<br>
+드래그나 직선이 긴 레이스에서는 앞을 최대로(뒤는 기본 또는 최저로)하면 가속이 빨라지는 효과를 볼 수 있다<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup></p>
+<h2 id="오프셋">오프셋</h2>
+<p>오프셋을 높이면 자량의 전폭이 넓어져 안정적이다.<br>
+그 이외에는 효과가 별로 없다.</p>
+<h2 id="캠버">캠버</h2>
+<p><strong>모르면 건드리지 말아야 할 것 1순위</strong><br>
+이 값을 크게 높이거나 낮추면 차량이 쉽게 넘어진다.<br>
+<s>보기에도 좋지 않다.</s></p>
+<p>드리프트를 위해 마이너스 캠버(바퀴의 아래가 차량 밖으로)를 사용하면<sup class="footnote-ref"><a href="#fn2" id="fnref2">2</a></sup> 차가 더 잘 미끄러진다.</p>
+<p>또는 차고가 낮은 대형 차<sup class="footnote-ref"><a href="#fn3" id="fnref3">3</a></sup>나 트레일러 차량<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup>의 안정성을 위한 용도<sup class="footnote-ref"><a href="#fn5" id="fnref5">5</a></sup>로 사용할 것</p>
+<h2 id="스프링">스프링</h2>
+<h3 id="강성">강성</h3>
+<p>차량의 탄성력을 제어한다.<br>
+값을 높이면 착지가 안정적이다.<br>
+기본값 또는 그 이상을 추천한다.</p>
+<h3 id="감쇠댐핑">감쇠(댐핑)</h3>
+<p>차량의 진동을 제어한다.<br>
+값을 올리면 차량이 진동에 강해진다. (랠리에서 좋다)</p>
+<h2 id="조향">조향</h2>
+<h3 id="앵글">앵글</h3>
+<p>차량의 조향 각도이다.<br>
+20~25°가 주행에 좋다.</p>
+<h3 id="최고-속도-제어">최고 속도 제어</h3>
+<p>차량를 조향할 때 속도를 유지할려는 성질<br>
+값을 높이면 조향해도 속도가 높게 유지되고, 낮추면 조향할 때 속도 유지를 안하는 대신 고속에서도 조향이 잘 된다. <s>그리고 스핀</s></p>
+<p><strong>조향 각도에 따른 권장 수치</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>각도(°)</th>
+<th>속도 제어 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10~15</td>
+<td>0.4~0.6</td>
+</tr>
+<tr>
+<td>16~30</td>
+<td>0.6~0.8</td>
+</tr>
+<tr>
+<td>31~45</td>
+<td>0.7~0.85</td>
+</tr>
+</tbody>
+</table><h2 id="종목별">종목별</h2>
+<h2 id="드래그">드래그</h2>
+<p>드래그에서는 높이에서 앞을 최대로, 뒤는 기본 또는 최저로, 스프링은 둘 다 최대로 하고 캠버는 기본으로 나머지는 원하는 값으로 하면 된다.</p>
+<h2 id="서킷레이스">서킷(레이스)</h2>
+<p>서킷에서는 높이, 오프셋, 캠버를 기본으로 하고<br>
+스프링에서 강성은 기본으로, 댐핑은 최대로 하고<br>
+조향은 20~25°,  0.7~0.8로 하면 된다.</p>
+<h2 id="랠리">랠리</h2>
+<p>랠리에서는 높이은 높게, 오프셋은 10~20%올리고 캠버는 기본에 스프링 둘 다 올리고 조향은 20~30°, 0.6~0.7로 하면 된다.</p>
+<h2 id="br"><br></h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>원리: 차량의 다운포스는 차량의 하부 방향으로 작용하는데, 차량의 앞을 들면 하부가 앞을 향하게 되면서, 원래의 가속력에 다운포스가 더해져 더 빨리 가속하게 되는 것 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>최대 10%이하로만 올리는 것이 좋다. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>예) 어벤져 7400 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>예) 함머 EV 6x6 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p>다른 차량에 캠버각 사용 시 역효과가 발생할 수 있음 <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div>
+</body>
+
+</html>
